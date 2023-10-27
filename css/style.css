@@ -7,17 +7,28 @@
 :root{
     --main-color: #0A031B;
 }
-body{
+body, html{
     background-color: #0A031B;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
+    scroll-behavior: smooth;
+    transition: 1s all;
 }
 
+header .rolagem{
+    background-color: red;
+}
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 80px;
+    padding: 10px 80px;
+    background-color: #0A031B;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.6s all;
 }
 
 header .logo img{
@@ -38,7 +49,9 @@ header .navegation nav ul li a{
     margin: 0 14px;
 }
 
-
+main{
+    margin-top: 100px;
+}
 main .leftMain h1{
     font-family: 'Imperial Script', cursive;
     font-size: 120px;
@@ -70,9 +83,10 @@ main .leftMain h1{
 
 .salao h1{
     font-family: 'Imperial Script', cursive;
-    font-size: 120px;
+    font-size: 60px;
     color: var(--main-color);
     padding: 15px 80px;
+    transition: 1s;
 }
 
 .categorias{
@@ -81,7 +95,8 @@ main .leftMain h1{
     justify-content: center;
 }
 .categoria{
-    margin: 0 225px;
+    transition: 3s;
+    margin: 0 100px;
     text-align: center;
 }
 .categoria h3{
@@ -116,3 +131,132 @@ main .leftMain h1{
     text-decoration: none;
     border-radius: 10px;
 }
+
+.loja{
+    display: flex;
+    align-items: center;
+}
+
+.loja .leftLoja{
+    width: calc(100% / 2);
+    overflow: hidden;
+}
+.loja .leftLoja img{
+    width: 100%;
+    object-fit: cover;
+}
+.loja .rightLoja{
+    width: calc(100% / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.rightLojaContainer{
+    text-align: center;
+}
+.rightLojaContainer h1{
+    font-family: 'Imperial Script', cursive;
+    font-size: 120px;
+    margin-bottom: 20px;
+}
+.rightLojaContainer a{
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 25px;
+    font-weight: 900;
+    border-radius: 10px;
+    color: var(--main-color);
+    background-color: white;
+}
+
+/* MOBILE */
+.navegationMobile{
+    display: none;
+    text-align: center;
+}
+.navegationMobile nav ul li{
+    list-style: none;
+}
+
+.navegationMobile nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+.menu{
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navegation{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    main{
+        margin-top: 250px;
+    }
+    main .leftMain h1{
+        font-size: 70px;
+        text-align: center;
+        color: white;
+        margin-left: 0px;
+    } 
+    .salao{
+        text-align: center;
+        margin-top: 320px;
+    }
+    .leftMain{
+        width: calc(100%);
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container .rightMain{
+        display: none;
+    }
+    .categoria{
+        margin: 0 30px;
+    }
+    .categoria h3{
+        font-size: 12px;
+    }
+
+    .categoria .icone{
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .loja{
+        margin-top: 200px;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .leftLoja{
+        display: none;
+    }
+
+    .rightLojaContainer h1{
+        font-size: 50px;
+    }
+    .rightLojaContainer a{
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+
+
+
