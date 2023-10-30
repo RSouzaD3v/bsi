@@ -1,5 +1,5 @@
-// const date = new Date();
-const nowHours = 8;
+const date = new Date();
+const nowHours = date.getHours();
 
 function isOpen(){
     let isOpenLi = document.querySelector('.isOpen');
