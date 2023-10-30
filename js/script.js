@@ -1,3 +1,4 @@
+// EFEITO SCROLL-HEADER
 window.addEventListener('scroll', function(){
     let header = document.querySelector('header');
     if(window.scrollY > 0){
@@ -9,6 +10,7 @@ window.addEventListener('scroll', function(){
     }
 })
 
+// EFEITO SCROLL OPACIDADE
 function efeitoEscrita(){
     let categoria = document.querySelectorAll('.categoria');
     let frase = document.querySelector('.salao h1');
@@ -20,9 +22,10 @@ function efeitoEscrita(){
         }
     })
 }
-
 efeitoEscrita();
 
+
+// HEADER-MOBILE FUNCIONALIDADES
 let navegationMobile = document.querySelector('.navegationMobile');
 let menu = document.querySelector('.menu');
 
@@ -35,8 +38,3 @@ menu.addEventListener('click', () => {
         navegationMobile.style.display = 'block';
     }
 })
-
-
-
-// background-color: #0a031b60;
-// backdrop-filter: blur(10px);
