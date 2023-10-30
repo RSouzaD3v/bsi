@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad98922715.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./agendar.css">
+    <title>BSI - Agendar</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <a href="../index.html"><img src="../assets/logo.png" alt=""></a>
+        </section>
+    </header>
+    <main>
+        <section class="container">
+            <section class="container_01 ativado">
+                <h1>Qual serviço você pretende agendar?</h1>
+                <p>01 / 03</p>
+
+                <label for="servicos"></label>
+                <select name="servicos" id="servicos">
+                    <option value="cabelo">Cabelos</option>
+                    <option value="manicure">Unhas Mão</option>
+                    <option value="pedicure">Unhas Pé</option>
+                </select>
+
+                <button id="prox_01">Próximo</button>
+            </section>
+
+            <section class="container_02">
+                <h1>Data do agendamento:</h1>
+                <p>02 / 03</p>
+
+                <label for="data"></label>
+                <select name="data" id="data">
+                    <option value="hoje">Hoje</option>
+                    <option value="amanha">Amanhã</option>
+                    <option value="doisDias">Daqui 2 dias</option>
+                </select>
+
+                <button id="prox_02">Próximo</button>
+            </section>
+
+
+            <section class="container_03">
+                <h1>Marcar para qual turno do dia ?</h1>
+                <p>03 / 03</p>
+
+                <label for="turno"></label>
+                <select name="turno" id="turno">
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+
+                <a id="prox_03" href="#">Finalizar</a>
+            </section>
+            <!-- <section class="container_02"></section>
+            <section class="container_03"></section> -->
+        </section>
+    </main>
+</body>
+<script src="./agendar.js"></script>
+</html>
