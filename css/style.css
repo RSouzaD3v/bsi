@@ -33,7 +33,7 @@ body, html{
     border: 1px rgb(0, 255, 85) solid;
 }
 .fechado{
-    color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0) !important;
     border: 1px rgb(255, 0, 0) solid;
 }
 

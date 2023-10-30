@@ -10,7 +10,7 @@ function isOpen(){
     }else if(nowHours >= 8 && nowHours < 18){
         isOpenLi.innerHTML = `<h2>Aberto</h2>`;
         isOpenLi.classList.add('aberto');
-    }else if(nowHours > 18){
+    }else if(nowHours >= 18){
         isOpenLi.innerHTML = `<h2>Fechado</h2>`;
         isOpenLi.classList.add('fechado');
     }
