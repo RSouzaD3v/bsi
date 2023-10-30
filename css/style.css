@@ -194,6 +194,9 @@ main .leftMain h1{
 
 
 @media screen and (max-width: 600px) {
+    header{
+        padding: 20px 30px;
+    }
     .navegation{
         display: none;
     }

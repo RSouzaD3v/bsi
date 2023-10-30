@@ -2,12 +2,10 @@ window.addEventListener('scroll', function(){
     let header = document.querySelector('header');
     if(window.scrollY > 0){
         header.style.backgroundColor = "#0a031b60";
-        header.style.backdropFilter = "blur(10px)";
-        header.style.padding = "5px 80px"; 
+        header.style.backdropFilter = "blur(10px)"; 
     }else{
         header.style.backgroundColor = "#0A031B";
         header.style.backdropFilter = "blur(0px)"; 
-        header.style.padding = "10px 80px"; 
     }
 })
 
