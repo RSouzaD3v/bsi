@@ -70,6 +70,9 @@ header .navegation nav ul li a{
     font-size: 22px;
     margin: 0 14px;
 }
+header .navegation nav ul li a:hover{
+    color: blueviolet;
+}
 
 main{
     margin-top: 100px;
@@ -215,7 +218,7 @@ main .leftMain h1{
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     header{
         padding: 20px 30px;
     }
@@ -226,29 +229,33 @@ main .leftMain h1{
         display: block;
     }
     main{
-        margin-top: 250px;
+        margin-top: 200px;
     }
     main .leftMain h1{
         font-size: 70px;
         text-align: center;
         color: white;
         margin-left: 0px;
+        margin-bottom: 10px;
     } 
     .salao{
         text-align: center;
         margin-top: 320px;
+        margin-bottom: -220px;
     }
     .leftMain{
         width: calc(100%);
     }
     .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: block;
     }
     
     .container .rightMain{
-        display: none;
+        width: 100%;
+        margin-bottom: -330px;
+    }
+    .container .rightMain img{
+        width: 100%;
     }
     .categoria{
         margin: 0 30px;
@@ -266,13 +273,16 @@ main .leftMain h1{
     .loja{
         margin-top: 200px;
         margin-bottom: 100px;
-        display: flex;
-        justify-content: center;
+        display: block;
+        text-align: center;
     }
-    .leftLoja{
-        display: none;
+    .loja .leftLoja{
+        width: 100%;
     }
 
+    .loja .rightLoja{
+        width: 100%;
+    }
     .rightLojaContainer h1{
         font-size: 50px;
     }
